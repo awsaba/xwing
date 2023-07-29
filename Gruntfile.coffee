@@ -15,9 +15,10 @@ module.exports = (grunt) ->
                     'app/javascripts/xwingquickbuilds.js': ['coffeescripts/content/cards-quickbuilds.coffee']
                     'app/javascripts/xwingrules.js': ['coffeescripts/content/rules.coffee']
                     'app/javascripts/translations.js': ['coffeescripts/translations/*.coffee']
+                    'app/javascripts/dump-content.js': ['coffeescripts/content/dump-content.coffee']
         sass:
             options:
-                implementation: require('node-sass') 
+                implementation: require('node-sass')
             compile:
                 expand: true
                 cwd: 'stylesheets/'
@@ -35,9 +36,9 @@ module.exports = (grunt) ->
             install:
                 options:
                     targetDir: 'app/bower_components'
-                    verbose: false 
-                    cleanTargetDir: false 
-                    cleanBowerDir: false 
+                    verbose: false
+                    cleanTargetDir: false
+                    cleanBowerDir: false
                     layout: 'byComponent'
                     copy: true
         uglify:
