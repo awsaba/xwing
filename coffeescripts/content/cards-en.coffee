@@ -1731,7 +1731,7 @@ exportObj.cardLoaders.English = () ->
            text: """After you receive a stress token, you may roll 1 attack die to remove it. On a %HIT% result, suffer 1 %HIT% damage."""
         "Hol Okand (BoY)":
            display_name: """Hol Okand (BoY)"""
-           text: """During the System Phasse, if there are no enemy ships at range 1-2, you may recover 1 %CHARGE% on any upgrade."""
+           text: """During the System Phase, if there are no enemy ships at range 1-2, you may recover 1 %CHARGE% on any upgrade."""
         '"Pops" Krail (BoY)':
            display_name: """“Pops” Krail (BoY)"""
            text: """While you perform a %SINGLETURRETARC% attack, you may reroll up to 2 attack dice."""
@@ -1854,11 +1854,17 @@ exportObj.cardLoaders.English = () ->
         "Dash Rendar (YLF-SL)":
            display_name: """Dash Rendar (YLF-SL)"""
            text: """After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1."""
+        "Dash Rendar (Scum)":
+           display_name: """Dash Rendar"""
+           text: """After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1."""
         '"Leebo" (YLF)':
            display_name: """“Leebo” (YLF)"""
            text: """After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token."""
         '"Leebo" (YLF-SL)':
            display_name: """“Leebo” (YLF-SL)"""
+           text: """At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3."""
+        '"Leebo" (Scum)':
+           display_name: """“Leebo”"""
            text: """At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3."""
 
         # Hotshots and Aces 2
@@ -2096,7 +2102,7 @@ exportObj.cardLoaders.English = () ->
            text: """Gain a %FRONTARC% primary weapon with a value of “3.”%LINEBREAK%During the End Phase, do not remove up to 2 focus tokens."""
         "Outrider":
            display_name: """Outrider"""
-           text: """ While you perform an attack that is obstructed by an obstacle, the defender rolls 1 fewer defense die. %LINEBREAK% After you fully execute a maneuver, if you moved through or overlapped an obstacle, you may remove 1 of your red or orange tokens. %LINEBREAK% <i>Errata (since rules reference 1.0.2): changed "obstructed attack" to "an attack that is obstructed by an obstacle"</i>"""
+           text: """While you perform a primary attack at range 3, roll 1 additional attack die. %LINEBREAK% While you perform an attack that is obstructed by an obstacle, you may change one of the defender's %EVADE% results to a %FOCUS% result. %LINEBREAK% <i>Errata (since errata 1.8): new gametext</i>"""
         "Phantom":
            display_name: """Phantom"""
            text: """You can dock at range 0-1."""
@@ -3221,9 +3227,6 @@ exportObj.cardLoaders.English = () ->
         '"Leebo" (YLF)':
            display_name: """“Leebo”"""
            text: """After you repair a damage card, you may perform an action from your action bar."""
-        "Outrider (YLF)":
-           display_name: """Outrider"""
-           text: """While you perform a primary attack at range 3, roll 1 additional attack die. %LINEBREAK% While you perform an attack that is obstructed by an obstacle, you may spend one of the defender's %EVADE% results to a %FOCUS% result."""
         "Efficient Processing (YLF)":
            display_name: """Efficient Processing"""
            text: """After you perform a %CALCULATE% action, gain 1 calculate token."""
