@@ -11160,7 +11160,6 @@ exportObj.basicCardData = ->
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Missile"
                 "Device"
                 "Illicit"
                 "Modification"
@@ -13546,7 +13545,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "YT-2400 Light Freighter"
             skill: 3
-            points: 7
+            points: 6
             upgrades: [
                 "Efficient Processing (YLF)"
                 "Seeker Missiles (YLF)"
@@ -17254,6 +17253,7 @@ exportObj.basicCardData = ->
         {
             name: "Vectored Cannons (RZ-1)"
             id: 371
+            xws: "vectoredcannonsrz1"
             points: 0
             slot: "Configuration"
             standardized: true
