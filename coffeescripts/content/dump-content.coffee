@@ -28,6 +28,6 @@ for e, contents of manifest.manifestByExpansion
                 item.xws = name.canonicalize()
         delete item["name"]
 
-    expansionsAsXws.push {"name": e, "contents": contents, "sku": "SWZ"}
+    expansionsAsXws.push {"name": e, "contents": contents, "sku": "swz"}
 
 console.log(JSON.stringify(expansionsAsXws, null, 2))
