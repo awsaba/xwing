@@ -13,7 +13,7 @@ getXws = (cardName, cardList) ->
     return ""
 
 basicCards = cards.basicCardData()
-expansionsAsXws = {}
+expansionsAsXws = []
 for e, contents of manifest.manifestByExpansion
     #console.log(e, contents)
     for item in contents
@@ -21,12 +21,13 @@ for e, contents of manifest.manifestByExpansion
         #console.log(item)
         switch item["type"]
             when "pilot"
-                item.name = getXws(name, basicCards.pilotsById)
+                item.xws = getXws(name, basicCards.pilotsById)
             when "upgrade"
-                item.name = getXws(name, basicCards.upgradesById)
-            when "ship"
-                item.name = name.canonicalize()
+                item.xws = getXws(name, basicCards.upgradesById)
+            else
+                item.xws = name.canonicalize()
+        delete item["name"]
 
-    expansionsAsXws[e.canonicalize()] = contents
+    expansionsAsXws.push {"name": e, "contents": contents, "sku": "SWZ"}
 
 console.log(JSON.stringify(expansionsAsXws, null, 2))
